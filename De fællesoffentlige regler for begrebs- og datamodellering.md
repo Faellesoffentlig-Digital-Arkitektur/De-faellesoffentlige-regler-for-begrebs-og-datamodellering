@@ -79,8 +79,6 @@ Målsætningen om sammenhæng fra lovgivning til it-systemer er ambitiøs, men d
 
 Tidligere har modelreglerne været organiseret som en serie af trin, som successivt skulle gøre de resulterende modeller og deres elementer frit genbrugelige og selvbeskrivende med det formål at skabe en sømløs total-modellering af de offentlige data. Det har imidlertid vist sig formålstjenligt, at satse på at indarbejde god modelleringspraksis på en række tilgængelige områder frem for at fokusere på en ganske vidtrækkende omorganisering af gængs modelleringspraksis.
 
-
-
 ![2.jpg](C:\Users\B339605\Documents\GitHub\De-faellesoffentlige-regler-for-begrebs-og-datamodellering\assets\2.jpg)
 
 Figuren viser, hvordan forskellige egenskaber ved gode modeller trinvist kan gøre modellerne og deres elementer mere tilgængelige og genbrugelige:
@@ -97,13 +95,9 @@ På rejsen fra lovgivning, behov og ønsker over begrebs- og datamodellering til
 
 Sprogbrugen vedrørende modeltyper og deres anvendelse er forskelligartet og mangetydig. I det følgende opridses den forståelse og navngivning, som tilstræbes i dette dokument:
 
-
-
 ![3.png](C:\Users\B339605\Documents\GitHub\De-faellesoffentlige-regler-for-begrebs-og-datamodellering\assets\3.png)
 
 **Terminologiske begrebsmodeller** er vidensorganiserende modeller der beskriver begreber og deres indbyrdes relationer. Formålet med terminologisk begrebsmodellering er at skabe afklaring og enighed om betydningen af begreber og brugen af termer. Bemærk at det ikke nødvendigvis kun er de centrale forretningsobjekter som beskrives på denne måde, men derimod alle de begreber som det er relevant at afklare. Da terminologiske begrebsmodeller er den eneste type begrebsmodeller disse regler beskæftiger sig med vil de også blive refereret til blot som begrebsmodeller. Begrebsmodeller kan repræsenteres på listeform (begrebsliste) eller som et diagram (begrebsdiagram).
-
-
 
 <img title="" src="file:///C:/Users/B339605/Documents/GitHub/De-faellesoffentlige-regler-for-begrebs-og-datamodellering/assets/4.png" alt="4.png" data-align="inline">
 
@@ -1575,98 +1569,3 @@ W3C (2014f):"Data Catalog Vocabulary (DCAT)", [\[Online\]](https://www.w3.org/TR
 W3C (2015): “RDF vocabularies Current Status”, [\[Online\]](https://www.w3.org/standards/techs/rdfvocabs#w3c_all). (Senest tilgået 12-03-2019).
 
 W3C (2017): "Data on the Web Best Practices", [\[Online\]](https://www.w3.org/TR/dwbp/#DataIdentifiers) . (Senest tilgået 12-03-2019).
-
-[Permanent URL til artiklen: https://arkitektur.digst.dk/node/1091](https://arkitektur.digst.dk/node/1091)
-
-[Tilbage til toppen](#top)
-
-Opdateret 04. december 2023
-
-DokumentinformationIndholdsfortegnelse
-
-* [Indledning](#indledning)
-  * [Hvorfor have fællesoffentlige modelregler?](#hvorfor-have-fllesoffentlige-modelregler)
-  * [Baggrund](#baggrund)
-    * [Hvad er problemet som modelreglerne er med til at afhjælpe?](#hvad-er-problemet-som-modelreglerne-er-med-til-at-)
-    * [Hvad er gevinsterne ved modelreglerne?](#hvad-er-gevinsterne-ved-modelreglerne)
-    * [Hvilke erfaringer og metoder bygger modelreglerne på?](#hvilke-erfaringer-og-metoder-bygger-modelreglerne-)
-    * [Hvad er grundideen i modelreglerne?](#hvad-er-grundideen-i-modelreglerne)
-    * [](#)
-    * [Hvad handler modelreglerne om?](#hvad-handler-modelreglerne-om)
-    * [Hvad er ambitionerne med modelreglerne](#hvad-er-ambitionerne-med-modelreglerne)
-  * [Modeltyper](#modeltyper)
-  * [Modeller til genbrug](#modeller-til-genbrug)
-    * [Eksternt genbrug](#eksternt-genbrug)
-  * [Læsevejledning til regler](#lsevejledning-til-regler)
-  * [UML-elementerne](#uml-elementerne)
-* [Regler](#regler)
-  * [Generelle regler](#generelle-regler)
-    * [01 - Brug UML som det visuelle modelsprog](#r01)
-    * [02 - Brug kun udvalgte UML-elementer](#r02)
-    * [03 - Brug UML-stereotyper](#r03)
-    * [04 - Udstil modellen online](#r04)
-    * [05 - Gør modellen tilgængelig i maskinlæsbart format](#r05)
-  * [Regler for modeller](#regler-for-modeller)
-    * [06 - Angiv meningsfyldte navne og beskrivelser for modeller](#r06)
-    * [07 - Angiv identifikation af modeller](#r07)
-    * [08 - Angiv den modelansvarlige organisation](#r08)
-    * [09 - Angiv emne for modellen](#r09)
-    * [10 - Angiv modellens version](#r10)
-    * [11 - Modellen skal forretningsgodkendes](#r11)
-    * [12 - Angiv modellens modelstatus](#r12)
-    * [13 - Angiv modellens lovgrundlag](#r13)
-    * [14 - Etablér sammenhæng mellem modeller](#r14)
-    * [15 - Modeller klassifikationer til genbrug](#r15)
-  * [Regler for modelelementer](#regler-for-modelelementer)
-    * [16 - Angiv meningsfyldte UML-navne for modelelementer](#r16)
-    * [17 - Giv alle modelelementer en identifikator](#r17)
-    * [18 - Angiv termer i et naturligt sprog](#r18)
-    * [19 - Brug standardiserede konventioner for angivelse af navne](#r19)
-    * [20 - Udarbejd definitioner eller beskrivelser af modellens elementer](#r20)
-    * [21 - Udarbejd strukturerede definitioner på en standardiseret måde](#r21)
-    * [22 - Udarbejd anvendelsesneutrale definitioner](#r22)
-    * [23 - Angiv modelelementers lovgrundlag](#r23)
-    * [24 - Definér kun nye modelelementer når det er nødvendigt](#r24)
-    * [25 - Sammensæt anvendelsesmodeller af elementer fra kernemodeller](#r25)
-    * [26 - Angiv om begrebet tilhører modellens emne](#r26)
-    * [27 - Brug standardiserede primitive datatyper](#r27)
-    * [28 - Modellér klassifikationsemner som instanser](#r28)
-* [Bilag A: FDA-profilen](#bilag-a-fda-profilen)
-  * [Tabeller med beskrivelser af FDA-profilens stereotyper og tags](#tabeller-med-beskrivelser-af-fda-profilens-stereot)
-    * [Del 1: FDA-profilens stereotyper](#del-1-fda-profilens-stereotyper)
-    * [Del 2: FDA-profilens Tags](#del-2-fda-profilens-tags)
-  * [FDA-profilens klassifikationer](#fda-profilens-klassifikationer)
-* [Bilag B: Datatyper fra XSD/RDFS](#bilag-b-datatyper-fra-xsdrdfs)
-* [Bilag C: Begrebsmodellens oplysningstyper](#bilag-c-begrebsmodellens-oplysningstyper)
-  * [Specifikation af begrebsliste i tabelformat](#specifikation-af-begrebsliste-i-tabelformat)
-  * [Specifikation af begrebsliste efter ISO-standard 10241](#specifikation-af-begrebsliste-efter-iso-standard-1)
-  * [Begrebsmodel repræsenteret ved begrebsdiagram i UML](#begrebsmodel-reprsenteret-ved-begrebsdiagram-i-uml)
-* [Bilag D: Ordliste](#bilag-d-ordliste)
-  * [Centrale forkortelser:](#centrale-forkortelser)
-* [Litteraturliste](#litteraturliste)
-
-Titel De fællesoffentlige regler for begrebs- og datamodellering
-
-Seneste opdateringsdato
-
-02\. august 2021
-
-Arkitekturperspektiv
-
-Information
-
-Dokument beskrivelse
-
-De fællesoffentlige regler for begrebs- og datamodellering er fastlægger regler for udformning, deling og genbrug af begrebs- og datamodeller. Ved at anvende modelreglerne sikres, at begreber og data er beskrevet og dokumenteret grundigt, korrekt og ensartet.
-
-FDA Status
-
-Optaget
-
-Produktlivscyklus
-
-Færdig
-
-Versionsnummer
-
-2.1.1
