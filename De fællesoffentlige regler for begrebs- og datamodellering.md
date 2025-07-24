@@ -175,19 +175,19 @@ Alternativt kan associationen udstyres med mindst en associationsende (se senere
 
 * **komposition** (Composition): En form for association som anvendes til at beskrive en relation mellem to klasser, som beskriver at instansen af den ene klasse (B) er en del af instansen af den anden klasse (A) og ikke kan eksistere uden denne.
 
-![Figur13_umlelementerne5.png](assets/Figur13_umlelementerne6.png)
+![Figur13_umlelementerne6.png](assets/Figur13_umlelementerne6.png)
 
 * **tilknytningsklasse / associationsklasse** (Association class): UML-element som karakteriserer selve relationen mellem to klasser. Ofte anvendt til at angive temporalitet for en association.
 
-![Figur14_umlelementerne6.png](assets/Figur14_umlelementerne7.png)
+![Figur14_umlelementerne7.png](assets/Figur14_umlelementerne7.png)
 
 * **attribut** (Attribute): UML-element som anvendes til at beskrive de af en klasses egenskaber, som har et udfaldsrum, der er en enkelt værdi. I særlige tilfælde kan attributter have udfaldsrum som ikke er en enkelt værdi – for eksempel beskrevet ved en struktureret datatype eller en klassifikation.
 
-![Figur15_umlelementerne7.png](assets/Figur15_umlelementerne8.png)
+![Figur15_umlelementerne8.png](assets/Figur15_umlelementerne8.png)
 
 * **associationsende** (Association End/Role): UML-element som anvendes til at beskrive klasseegenskaber, som har et udfaldsrum, der beskrives ved en klasse, en struktureret datatype eller en enumeration. Associationsenden karakteriserer udfaldsrummets rolle i forhold til den klasse, som ’har’ associationsenden. Det vil typisk ikke være nødvendigt at angive associationsender i begge ender af en association.
 
-![Figur16_umlelementerne8.png](assets/Figur16_umlelementerne9.png)
+![Figur16_umlelementerne9.png](assets/Figur16_umlelementerne9.png)
 
 * **multiplicitet** (Multiplicity): Angivelse af, hvor mange (forskellige) værdier en egenskab kan eller skal have. Angives for attributter og associationsender. Multiplicitet angives med en nedre og øvre grænse:
 
@@ -203,20 +203,20 @@ Bemærk at standard UML fortolkning medfører, at fravær af angivelse af multip
 
 Bemærk yderligere, at termen ’kardinalitet’ betegner antallet af elementer der konkret indgår i en samling, hvorimod ’multiplicitet’ betegner rammerne for, hvor mange elementer, der kan indgå.
 
-![Figur17_umlelementerne9.png](assets/Figur16_umlelementerne9.png)
+![Figur17_umlelementerne10.png](assets/Figur17_umlelementerne10.png)
 
 * **datatype:** (Data Type) UML-element, som beskriver udfaldsrummet for en attribut eller en association: i reglerne anvendes de følgende:
 * **primitiv datatype** (Primitive Data Type): datatype, som beskriver et udfaldsrum bestående af en enkel værdi. Typisk udfaldsrum for en attribut
 
-![Figur18_umlelementerne10.png](assets/Figur17_umlelementerne10.png)
+![Figur18_umlelementerne11.png](assets/Figur18_umlelementerne11.png)
 
 * **enumeration** (Enumeration): Datatype som ved hjælp af UML-elementet Enumeration specificerer en række (tekst)værdier som gyldigt udfaldsrum for en attribut eller associationsende. Dette er en gyldig måde at modellere en klassifikation på.
 
-![Figur19_umlelementerne11.png](assets/Figur18_umlelementerne11.png)
+![Figur19_umlelementerne12.png](assets/Figur19_umlelementerne12.png)
 
 * **struktureret datatype** (Structured DataType): UML-element som beskriver et udfaldsrum som en sammenstilling af attributter med datatyper. En struktureret datatype adskiller sig fra en klasse ved kun at være identificeret ved sin værdi. Det vil sige at alle instanser af en datatype med identisk værdi kan betragtes som værende det samme. (instanser af klasser med identiske værdier kan sagtens være forskellige alligevel) En struktureret datatype kan både være udfaldsrum for associationsender og attributter.
 
-![Figur20_umlelementerne12.png](assets/Figur19_umlelementerne12.png)
+![Figur20_umlelementerne13.png](assets/Figur20_umlelementerne13.png)
 
 ## Regler
 
@@ -286,7 +286,7 @@ Informationsmodeller og logiske datamodeller kan bestå af alle de ovennævnte e
 
 Associationer kan udstyres med både navne (inkl. læseretning) og associationsender, dog vil man normalt i informationsmodeller udelukkende anvende associationsnavne og i logiske datamodeller udelukkende anvende associationsender.
 
-![Figur21_umlelementerne13.png](assets/Figur20_umlelementerne13.png)
+![Figur21_modelregel2.png](assets/Figur21_modelregel2.png)
 
 #### 03 - Brug UML-stereotyper
 
@@ -318,7 +318,7 @@ Følgende stereotyper anvendes for **modelelementer**:
 
 Bemærk at Generalisering/specialisering samt primitive datatyper ikke udstyres med stereotype
 
-![Figur22_modelregel2.png](assets/Figur21_modelregel2.png)
+![Figur22_modelregel3.png](assets/Figur22_modelregel3.png)
 
 #### 04 - Udstil modellen online
 
@@ -368,7 +368,7 @@ Modelsekretariatet vil i så fald bistå med konvertering til XMI.
 
 Modeller udstilles som xmi i [det fællesoffentlige katalog over begrebs- og datamodeller](/node/610/).
 
-![Figur23_modelregel3.png](assets/Figur22_modelregel3.png)
+![assets/Figur23_modelregel5.png](assets/Figur23_modelregel5.png)
 
 ### Regler for modeller
 
@@ -667,7 +667,7 @@ I UML-model: ' modelStatus (modelstatus)' = development (under udvikling)
 
 Sammenhængen mellem lovgrundlag og modeller skal dokumenteres ved at anføre referencer til lovgrundlag og standarder på området.
 
-![Figur24_modelregel5.png](assets/Figur23_modelregel5.png)
+![assets/Figur24_modelregel13.png](assets/Figur24_modelregel13.png)
 
 ##### Rationale
 
@@ -746,7 +746,7 @@ De modelelementer, der udarbejdes efter modelreglerne, skal have informationer, 
 
 Genbrug er også et fællesanliggende for alle elementer og alle modeller. Derfor gives der også her regler for genbrug og for, hvordan det enkelte elements historie eller proveniens skal formidles.
 
-![Figur25_modelregel13.png](assets/Figur24_modelregel13.png)
+![Figur25_modelregel15.png](assets/Figur25_modelregel15.png)
 
 #### 16 - Angiv meningsfyldte UML-navne for modelelementer
 
@@ -1093,7 +1093,7 @@ Man bør undersøge eksisterende modellering, og kun hvis et anvendeligt element
 
 Et element i en anvendelsesmodel skal entydigt identificere, hvilket element i en kernemodel, det genbruger.
 
-![Figur26_modelregel15.png](assets/Figur25_modelregel15.png)
+![Figur26_modelregel15.png](assets/Figur26_modelregel25.2.png)
 
 ##### Rationale
 
@@ -1113,7 +1113,7 @@ Bemærk også, at selv om en anvendelsesmodel ikke eksplicit har følgeskab af e
 
 I anvendelsesmodellen for et datasæt om elforsyningsanlæg indgår elementer, som er udarbejdet i regi af energiforsyningsanlægsmodelleringen samt genbrugte, allerede eksisterende elementer fra andre modeller.
 
-![Figur27_modelregel25.2.png](assets/Figur26_modelregel25.2.png)
+![Figur27_modelregel25.2.png](assets/Figur27_modelregel25.2.png)
 
 Namespaces, som indgår i de enkelte elementers identifikatorer er for nemheds skyld angivet som præfiks før elementnavnet. Således ser vi, at modellen indeholder elementer fra følgende kernemodeller:
 
@@ -1226,12 +1226,12 @@ FDA-profilen beskrives her indholdsmæssigt og vil således kunne implementeres 
 **Del 1 af FDA-profilen: modellens metadata**   
 I højre side af diagrammet herunder vises Model stereotypen med specialiseringerne ConceptModel, InformationModel, LogicalDatamodel og ClassificationModel. Stereotyperne er udvidelser af metaklassen Package (UML-pakker). Det er de fire specialiseringer - som arver tags fra den overordnede stereotype - som i praksis anvendes på pakker indeholdende de forskellige typer af modeller.
 
-![Figur28_modelregel25.3.png](assets/Figur27_modelregel25.3.png)
+![Figur28_FDA-profil_Model_meta.svg](assets/Figur28_FDA-profil_Model_meta.svg)
 
 **Del 2 af FDA-profilen: modelelementernes metadata**   
 På samme måde får modellens elementer genbrugelige metadata ved hjælp af stereotyper som vist i venstre side af nedenstående diagram.
 
-![Figur29_FDA-profil_Model_meta.svg](assets/Figur28_FDA-profil_Model_meta.svg)
+![Figur29_FDA-profil_Model_meta.svg](assets/Figur29_FDA-profil_modelelement.svg)
 
 ### Tabeller med beskrivelser af FDA-profilens stereotyper og tags
 
@@ -1329,7 +1329,7 @@ Udfaldsrum for klassifikationen: **ModelScope** (modelomfang)
 
 Nedenstående er en hierakisk oversigt over datatyper fra XSD/RDFS baseret på [W3C's liste](https://www.w3.org/TR/rdf11-concepts/#xsd-datatypes):
 
-![Figur30_FDA-profil_modelelement.svg](assets/Figur29_FDA-profil_modelelement.svg)
+![Figur30_FDA-profil_modelelement.svg](assets/Figur30_bilag_b1.png)
 
 En detaljeret beskrivelse af datatyperne gives i efterfølgende tabel:
 
