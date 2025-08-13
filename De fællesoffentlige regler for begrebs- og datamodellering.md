@@ -423,7 +423,7 @@ For alle modeltyper sættes desuden tagget ’modelScope’ (modelomfang) til en
 | ---------------- | -------------------------------------------------------------------------------------------------------------- |
 | Anvendelsesnote: | angivelse af en models omfang og orientering mod enten et bestemt emne eller en bestemt anvendelse             |
 | Udfaldsrum:      | CoreModel (kernemodel); ApplicationModel (anvendelsesmodel)                                                    |
-| Kilde:           | [mdl:modelscope](https://data.gov.dk/model/core/modelling#modelscope) - “the scope and orientation of a model” |
+| Kilde:           | mdl:modelscope - “the scope and orientation of a model” |
 
 * **Begrebslister:** Udfyld 'modelnavn', 'beskrivelse', 'modelsprog' og ’modelomfang’ iht. [Bilag C](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/bilag-c-begrebsmodellens-oplysningstyper)
 * **UML-modeller:** Udfyld taggene 'label (da) (modelnavn)', 'description (da) (beskrivelse)', 'language (modelsprog)' og 'modelscope (modelomfang)'
@@ -465,7 +465,7 @@ Mønstrets {reference}-del foreslås udgjort af et beskrivende ord der dækker m
 | Navn:            | namespace                                                                                                                    |
 | Anvendelsesnote: | logisk område, indenfor hvilket elementer navngives unikt, og som tjener som overordnet reference til de navngivne elementer |
 | Udfaldsrum:      | HTTP-URI                                                                                                                     |
-| Kilde:           | [vann:preferredNamespaceURI](http://purl.org/vocab/vann/preferredNamespaceUri)                                               |
+| Kilde:           | [vann:preferredNamespaceURI](https://vocab.org/vann/#preferredNamespaceUri)                                               |
 
 Det er også muligt at angive et præfiks som kan anvendes som en forkortet betegnelse for et namespace fulde URI.
 
@@ -474,7 +474,7 @@ Det er også muligt at angive et præfiks som kan anvendes som en forkortet bet
 | Navn:            | namespacepræfiks                                                                     |
 | Anvendelsesnote: | forkortet betegnelse for et namespace                                                |
 | Udfaldsrum:      | string                                                                               |
-| Kilde:           | [vann:preferredNamespacePrefix](http://purl.org/vocab/vann/preferredNamespacePrefix) |
+| Kilde:           | [vann:preferredNamespacePrefix](https://vocab.org/vann/#preferredNamespacePrefix) |
 
 **For UML-modeller:** Udfyld tagget ‘namespace’ på modelpakken
 
@@ -540,7 +540,7 @@ Reglen opfyldes ved at angive modellens emneområde som modelegenskaben ‘emne�
 
 ##### Eksempler
 
-I UML-model: ' theme (emne)' = [https://data.gov.dk/model/classification/form#ElOgVarmeforsyning](/node/666)
+I UML-model: ' theme (emne)' = `https://data.gov.dk/model/classification/form#ElOgVarmeforsyning`
 
 Note: Emnet kan evt angives med tekst, hvis det er nødvendigt at anvende en referencemodel, der ikke har HTTP-URI-identifikatorer
 
@@ -718,9 +718,9 @@ Ved at sikre sammenhæng mellem terminologiske begrebsmodeller, informationsmode
 
 ##### Eksempler
 
-For at opfylde implikationens første del, så kan begrebet ’vindkraftanlæg’ eksempelvis være defineret i en begrebsliste med definitionen ’kraftværk som omdanner vindenergi til elektricitet’. Begrebet kan også have en identifikator fx [https://data.gov.dk/model/concept/energysupplyfacility#windpowerplant](/node/671). I den logiske datamodellering anvendes samme term og definition til klassen Vindkraftanlæg (WindPowerPlant), og derudover kan der oprettes en reference fra denne klasse til det bagvedliggende begreb ved at udfylde tagget ’wasDerivedFrom’ med begrebets identifikator.
+For at opfylde implikationens første del, så kan begrebet ’vindkraftanlæg’ eksempelvis være defineret i en begrebsliste med definitionen ’kraftværk som omdanner vindenergi til elektricitet’. Begrebet kan også have en identifikator fx `https://data.gov.dk/model/concept/energysupplyfacility#windpowerplant`. I den logiske datamodellering anvendes samme term og definition til klassen Vindkraftanlæg (WindPowerPlant), og derudover kan der oprettes en reference fra denne klasse til det bagvedliggende begreb ved at udfylde tagget ’wasDerivedFrom’ med begrebets identifikator.
 
-For at opfylde implikationens anden del, så angives det at den logiske kernemodel ’Energiforsyningsanlæg’ er baseret på en terminologisk begrebsmodel med tagget 'wasDerivedFrom’=[https://data.gov.dk/model/concept/energysupplyfacility](/node/671)
+For at opfylde implikationens anden del, så angives det at den logiske kernemodel ’Energiforsyningsanlæg’ er baseret på en terminologisk begrebsmodel med tagget 'wasDerivedFrom’=`https://data.gov.dk/model/concept/energysupplyfacility`
 
 #### 15 - Modeller klassifikationer til genbrug
 
@@ -1451,7 +1451,8 @@ Repræsenteres begrebsmodellen med et begrebsdiagram i en UML-pakke udtrykkes so
 | datatypeegenskab             |                                                   | _egenskab, hvor udfaldsrummet er en værdi_                                                                                                                                                   | [https://www.w3.org/TR/owl-ref/](https://www.w3.org/TR/owl-ref/)                                                                                                                                                      | datatype property            |
 | egenskab                     |                                                   | _svarer til UML's Property og udtrykkes enten som associationsender eller attributter._                                                                                                      | [https://www.w3.org/TR/rdf11-concepts/](https://www.w3.org/TR/rdf11-concepts/)                                                                                                                                        | RDF property                 |
 | fysisk model                 |                                                   | _datamodel som beskriver datas fysiske struktur rettet mod teknisk implementering_                                                                                                           | [https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/mo...](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/modelregler)                                                      | physical data model          |
-| informationsmodel            |                                                   | _vidensorganiserende model som beskriver forretningsviden og som supplerer begreber med forretningsregler_                                                                                   | [https://www.kombit.dk/sites/default/files/user\_upload/documents/Vidensce...](https://www.kombit.dk/sites/default/files/user_upload/documents/Videnscenter/Metodehaandbog%20begrebs%20og%20informationsmodeller.pdf) | information model            |
+| informationsmodel            |                                                   | _vidensorganiserende model som beskriver forretningsviden og som supplerer begreber med forretningsregler_                                                                                   | [https://rammearkitektur.kl.dk/media/fptd00lh/begrebs-og-informationsmodeller.pdf](https://rammearkitektur.kl.dk/media/fptd00lh/begrebs-og-informationsmodeller.pdf
+) | information model            |
 | ISO-begrebsliste             |                                                   | _begrebsliste som er udtrykt i en tabel struktureret efter international terminologistandard ISO 10241:2011_                                                                                 | [https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/mo...](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/modelregler)                                                      | ISO concept list             |
 | kernemodel                   |                                                   | _genbrugelig model over et emneområde som ikke definerer modelelementer, der er defineret i andre kernemodeller_                                                                             | [https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/mo...](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/modelregler)                                                      | core model                   |
 | logisk datamodel             |                                                   | _logisk model som er udarbejdet med henblik på dataudveksling eller lagring af data._                                                                                                        | [https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/mo...](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering/modelregler)                                                      | logical data model           |
@@ -1508,8 +1509,6 @@ Ambler, Scott (2005): “The Elements of UML (TM) Style”, Cambridge University
 
 Dublin Core Metadata Initiative Usage Board (2014): "DCMI Metadata Terms (dct)" [\[Online\]](http://dublincore.org/documents/2012/06/14/dcmi-terms/). (Senest tilgået 12-03-2019).
 
-Digitaliseringsstyrelsen (2015): ”Grunddata Modelregler”, [\[Online\]](https://confluence.datafordeler.dk/display/DML/Modelregler+for+Grunddata). (Senest tilgået 09-07-2021).
-
 Digitaliseringsstyrelsen (2018): Retningslinjer for stabile HTTP-URIer, [\[Online\]](https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier).(Senest tilgået 12-03-2019).
 
 Europa-Kommissionen INSPIRE (2007): The INSPIRE Directive - Infrastructure for spatial information in Europe, [\[Online\]](http://inspire.ec.europa.eu/) . (Senest tilgået 12-03-2019).
@@ -1542,7 +1541,8 @@ OMG-ODM: “Ontology Definition Metamodel, version 1.1” , [\[Online\]](http://
 
 OMG-XMI (2015): “XML Metadata Interchange”, [\[Online\]](http://www.omg.org/spec/XMI/ ). (Senest tilgået 12-03-2019).
 
-Udbetaling Danmark, KL og KOMBIT (2015): ”Metodehåndbog - Begrebsmodeller, Informationsmodeller og Begrebsdefinitioner”. [\[Online\]](http://www.kombit.dk/metodeh%C3%A5ndb%C3%B8ger). (Senest tilgået 12-03-2019).
+Udbetaling Danmark, KL og KOMBIT (2015): ”Metodehåndbog - Begrebsmodeller, Informationsmodeller og Begrebsdefinitioner”. [\[Online\]](https://rammearkitektur.kl.dk/media/fptd00lh/begrebs-og-informationsmodeller.pdf
+). (Senest tilgået 12-03-2019).
 
 W3C (2002): "The OWL 2 Schema vocabulary (OWL 2)", [\[Online\]](https://www.w3.org/2002/07/owl). (Senest tilgået 12-03-2019).
 
