@@ -1093,7 +1093,7 @@ Man bør undersøge eksisterende modellering, og kun hvis et anvendeligt element
 
 Et element i en anvendelsesmodel skal entydigt identificere, hvilket element i en kernemodel, det genbruger.
 
-![Figur26_modelregel15.png](assets/Figur26_modelregel25.3.png)
+![Figur26_modelregel15.png](assets/Figur26_modelregel25.2.png)
 
 ##### Rationale
 
@@ -1113,7 +1113,7 @@ Bemærk også, at selv om en anvendelsesmodel ikke eksplicit har følgeskab af e
 
 I anvendelsesmodellen for et datasæt om elforsyningsanlæg indgår elementer, som er udarbejdet i regi af energiforsyningsanlægsmodelleringen samt genbrugte, allerede eksisterende elementer fra andre modeller.
 
-![Figur27_modelregel25.2.png](assets/Figur27_modelregel25.2.png)
+![Figur27_modelregel25.3.png](assets/Figur27_modelregel25.3.png)
 
 Namespaces, som indgår i de enkelte elementers identifikatorer er for nemheds skyld angivet som præfiks før elementnavnet. Således ser vi, at modellen indeholder elementer fra følgende kernemodeller:
 
