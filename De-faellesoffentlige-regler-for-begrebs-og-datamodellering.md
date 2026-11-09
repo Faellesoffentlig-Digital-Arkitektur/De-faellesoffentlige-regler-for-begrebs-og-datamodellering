@@ -1093,7 +1093,7 @@ Man bør undersøge eksisterende modellering, og kun hvis et anvendeligt element
 
 Et element i en anvendelsesmodel skal entydigt identificere, hvilket element i en kernemodel, det genbruger.
 
-![Figur26_modelregel15.png](assets/Figur26_modelregel25.2.png)
+![Figur26_modelregel15.png](assets/Figur26_modelregel25.3.png)
 
 ##### Rationale
 
